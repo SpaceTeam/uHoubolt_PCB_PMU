@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title ""
+Title "PMU"
 Date ""
 Rev ""
 Comp ""
@@ -55,6 +55,8 @@ F35 "A_PWM_13(PE8)" B L 1600 5750 50
 F36 "A_PWM_14(PE9)" B L 1600 5850 50 
 F37 "PWM_3(PB3)" O L 1600 4700 50 
 F38 "PWM_4(PB8)" O L 1600 4800 50 
+F39 "CAN1_H" B L 1600 4075 50 
+F40 "CAN1_L" B L 1600 4175 50 
 $EndSheet
 $Comp
 L Switch:SW_Push_SPDT SW2
@@ -746,34 +748,6 @@ Wire Wire Line
 Wire Wire Line
 	8700 3700 8300 3700
 $Comp
-L power:GND #PWR?
-U 1 1 5FE9D431
-P 3600 2150
-AR Path="/6016029C/5FE9D431" Ref="#PWR?"  Part="1" 
-AR Path="/5FE9D431" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 3600 1900 50  0001 C CNN
-F 1 "GND" H 3605 1977 50  0000 C CNN
-F 2 "" H 3600 2150 50  0001 C CNN
-F 3 "" H 3600 2150 50  0001 C CNN
-	1    3600 2150
-	1    0    0    -1  
-$EndComp
-Text Label 3300 1950 0    50   ~ 0
-CAN2_H
-Text Label 3300 2050 0    50   ~ 0
-CAN2_L
-$Comp
-L power:VCC #PWR0114
-U 1 1 5FEA3B9A
-P 3600 1850
-F 0 "#PWR0114" H 3600 1700 50  0001 C CNN
-F 1 "VCC" H 3617 2023 50  0000 C CNN
-F 2 "" H 3600 1850 50  0001 C CNN
-F 3 "" H 3600 1850 50  0001 C CNN
-	1    3600 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR0115
 U 1 1 5FEA67FB
 P 6550 3400
@@ -1023,245 +997,6 @@ Text Label 950  5450 0    50   ~ 0
 CELL_3V6
 Wire Wire Line
 	950  5450 1600 5450
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 5FF48C05
-P 3800 1950
-F 0 "J3" H 3880 1942 50  0000 L CNN
-F 1 "Conn_01x04" H 3880 1851 50  0000 L CNN
-F 2 "" H 3800 1950 50  0001 C CNN
-F 3 "~" H 3800 1950 50  0001 C CNN
-	1    3800 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 2050 3600 2050
-$Comp
-L power:GND #PWR0122
-U 1 1 6005FF95
-P 4800 1250
-F 0 "#PWR0122" H 4800 1000 50  0001 C CNN
-F 1 "GND" H 4805 1077 50  0000 C CNN
-F 2 "" H 4800 1250 50  0001 C CNN
-F 3 "" H 4800 1250 50  0001 C CNN
-	1    4800 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 1200 4800 1250
-$Comp
-L Sensor:INA260 U1
-U 1 1 6005FFA3
-P 5450 1300
-F 0 "U1" H 5450 1350 50  0000 C CNN
-F 1 "INA260" H 5450 1250 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5450 700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina260.pdf" H 5450 1200 50  0001 C CNN
-	1    5450 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 1100 5050 1200
-Connection ~ 5050 1100
-$Comp
-L Device:C_Small C2
-U 1 1 6005FFB2
-P 5700 900
-F 0 "C2" H 5792 946 50  0000 L CNN
-F 1 "100n" H 5792 855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5700 900 50  0001 C CNN
-F 3 "~" H 5700 900 50  0001 C CNN
-	1    5700 900 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0124
-U 1 1 6005FFB8
-P 5450 1750
-F 0 "#PWR0124" H 5450 1500 50  0001 C CNN
-F 1 "GND" H 5350 1700 50  0000 C CNN
-F 2 "" H 5450 1750 50  0001 C CNN
-F 3 "" H 5450 1750 50  0001 C CNN
-	1    5450 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0125
-U 1 1 6005FFBE
-P 5450 850
-F 0 "#PWR0125" H 5450 700 50  0001 C CNN
-F 1 "+3V3" H 5465 1023 50  0000 C CNN
-F 2 "" H 5450 850 50  0001 C CNN
-F 3 "" H 5450 850 50  0001 C CNN
-	1    5450 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 900  5450 850 
-Wire Wire Line
-	5450 1700 5450 1750
-Wire Wire Line
-	5600 900  5450 900 
-Connection ~ 5450 900 
-$Comp
-L power:GND #PWR0126
-U 1 1 6005FFC8
-P 5900 900
-F 0 "#PWR0126" H 5900 650 50  0001 C CNN
-F 1 "GND" H 5800 850 50  0000 C CNN
-F 2 "" H 5900 900 50  0001 C CNN
-F 3 "" H 5900 900 50  0001 C CNN
-	1    5900 900 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5800 900  5900 900 
-$Comp
-L Device:R_Small R8
-U 1 1 6005FFCF
-P 6400 1100
-F 0 "R8" H 6459 1146 50  0000 L CNN
-F 1 "10k" H 6459 1055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 1100 50  0001 C CNN
-F 3 "~" H 6400 1100 50  0001 C CNN
-	1    6400 1100
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR0127
-U 1 1 6005FFD5
-P 6600 1100
-F 0 "#PWR0127" H 6600 950 50  0001 C CNN
-F 1 "+3V3" H 6615 1273 50  0000 C CNN
-F 2 "" H 6600 1100 50  0001 C CNN
-F 3 "" H 6600 1100 50  0001 C CNN
-	1    6600 1100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6500 1100 6600 1100
-Wire Wire Line
-	6300 1100 5850 1100
-Text Label 6250 1100 2    50   ~ 0
-ALERT
-$Comp
-L power:GND #PWR0128
-U 1 1 6005FFDE
-P 5900 1600
-F 0 "#PWR0128" H 5900 1350 50  0001 C CNN
-F 1 "GND" H 5800 1550 50  0000 C CNN
-F 2 "" H 5900 1600 50  0001 C CNN
-F 3 "" H 5900 1600 50  0001 C CNN
-	1    5900 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 1600 5900 1500
-Wire Wire Line
-	5900 1400 5850 1400
-Wire Wire Line
-	5850 1500 5900 1500
-Connection ~ 5900 1500
-Wire Wire Line
-	5900 1500 5900 1400
-$Comp
-L power:+BATT #PWR0129
-U 1 1 6005FFE9
-P 5050 950
-F 0 "#PWR0129" H 5050 800 50  0001 C CNN
-F 1 "+BATT" H 5065 1123 50  0000 C CNN
-F 2 "" H 5050 950 50  0001 C CNN
-F 3 "" H 5050 950 50  0001 C CNN
-	1    5050 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 950  5050 1100
-Text Notes 5900 1450 0    50   ~ 0
-Addr: 0x40
-$Comp
-L Device:C_Small C1
-U 1 1 6005FFF1
-P 4900 1200
-F 0 "C1" V 4950 1100 50  0000 L CNN
-F 1 "100n" V 4800 1000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4900 1200 50  0001 C CNN
-F 3 "~" H 4900 1200 50  0001 C CNN
-	1    4900 1200
-	0    -1   -1   0   
-$EndComp
-Connection ~ 4800 1200
-Wire Wire Line
-	5000 1200 5050 1200
-Connection ~ 5050 1200
-Text Label 4400 1100 0    50   ~ 0
-BATT_VCC
-Text Label 4400 1200 0    50   ~ 0
-BATT_GND
-Wire Wire Line
-	4400 1200 4800 1200
-Wire Wire Line
-	4400 1100 5050 1100
-Text Label 6950 1950 0    50   ~ 0
-I2C_SCL
-Wire Wire Line
-	6250 1300 5850 1300
-Wire Wire Line
-	5850 1200 6250 1200
-Text Label 6250 1300 2    50   ~ 0
-I2C_SDA
-Text Label 6250 1200 2    50   ~ 0
-I2C_SCL
-Text Label 6750 1950 2    50   ~ 0
-I2C_SDA
-$Comp
-L Device:R_Small R12
-U 1 1 6013455E
-P 6950 1700
-F 0 "R12" H 7009 1746 50  0000 L CNN
-F 1 "10k" H 7009 1655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6950 1700 50  0001 C CNN
-F 3 "~" H 6950 1700 50  0001 C CNN
-	1    6950 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 1800 6950 1950
-$Comp
-L Device:R_Small R11
-U 1 1 6014D7EF
-P 6750 1700
-F 0 "R11" H 6809 1746 50  0000 L CNN
-F 1 "10k" H 6809 1655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6750 1700 50  0001 C CNN
-F 3 "~" H 6750 1700 50  0001 C CNN
-	1    6750 1700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6750 1800 6750 1950
-$Comp
-L power:+3V3 #PWR0130
-U 1 1 60153C54
-P 6750 1600
-F 0 "#PWR0130" H 6750 1450 50  0001 C CNN
-F 1 "+3V3" H 6765 1773 50  0000 C CNN
-F 2 "" H 6750 1600 50  0001 C CNN
-F 3 "" H 6750 1600 50  0001 C CNN
-	1    6750 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0131
-U 1 1 60154380
-P 6950 1600
-F 0 "#PWR0131" H 6950 1450 50  0001 C CNN
-F 1 "+3V3" H 6965 1773 50  0000 C CNN
-F 2 "" H 6950 1600 50  0001 C CNN
-F 3 "" H 6950 1600 50  0001 C CNN
-	1    6950 1600
-	1    0    0    -1  
-$EndComp
 Text Label 3400 5000 2    50   ~ 0
 I2C_SCL
 Wire Wire Line
@@ -1270,6 +1005,262 @@ Text Label 3400 5100 2    50   ~ 0
 I2C_SDA
 Wire Wire Line
 	3000 5100 3400 5100
+$Comp
+L Analog_ADC:INA226 U?
+U 1 1 5FF3C22A
+P 5950 1550
+F 0 "U?" H 5900 1700 50  0000 C CNN
+F 1 "INA226" H 5900 1600 50  0000 C CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 6750 1100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 6300 1450 50  0001 C CNN
+	1    5950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF41301
+P 5950 2050
+AR Path="/6016029C/5FF41301" Ref="#PWR?"  Part="1" 
+AR Path="/5FF41301" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5950 1800 50  0001 C CNN
+F 1 "GND" H 5955 1877 50  0000 C CNN
+F 2 "" H 5950 2050 50  0001 C CNN
+F 3 "" H 5950 2050 50  0001 C CNN
+	1    5950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FF72910
+P 5750 1050
+F 0 "C?" V 5500 1000 50  0000 C CNN
+F 1 "0.1u" V 5600 1000 50  0000 C CNN
+F 2 "" H 5750 1050 50  0001 C CNN
+F 3 "~" H 5750 1050 50  0001 C CNN
+	1    5750 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF785BB
+P 6800 1300
+F 0 "R?" H 6859 1346 50  0000 L CNN
+F 1 "2.7k" H 6859 1255 50  0000 L CNN
+F 2 "" H 6800 1300 50  0001 C CNN
+F 3 "~" H 6800 1300 50  0001 C CNN
+	1    6800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF7B552
+P 7150 1300
+F 0 "R?" H 7209 1346 50  0000 L CNN
+F 1 "2.7k" H 7209 1255 50  0000 L CNN
+F 2 "" H 7150 1300 50  0001 C CNN
+F 3 "~" H 7150 1300 50  0001 C CNN
+	1    7150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF7B9A9
+P 7500 1300
+F 0 "R?" H 7559 1346 50  0000 L CNN
+F 1 "2.7k" H 7559 1255 50  0000 L CNN
+F 2 "" H 7500 1300 50  0001 C CNN
+F 3 "~" H 7500 1300 50  0001 C CNN
+	1    7500 1300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3600 1950 3300 1950
+	5950 1050 5850 1050
+$Comp
+L power:GND #PWR?
+U 1 1 5FF86F39
+P 5650 1050
+AR Path="/6016029C/5FF86F39" Ref="#PWR?"  Part="1" 
+AR Path="/5FF86F39" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5650 800 50  0001 C CNN
+F 1 "GND" H 5655 877 50  0000 C CNN
+F 2 "" H 5650 1050 50  0001 C CNN
+F 3 "" H 5650 1050 50  0001 C CNN
+	1    5650 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 1050 6800 1050
+Wire Wire Line
+	6800 1050 6800 1200
+Connection ~ 5950 1050
+Wire Wire Line
+	6350 1550 6800 1550
+Wire Wire Line
+	6800 1550 6800 1400
+Connection ~ 6800 1050
+Wire Wire Line
+	7500 1050 7500 1200
+Wire Wire Line
+	6350 1250 6450 1250
+$Comp
+L Device:R_Small R?
+U 1 1 600E58A6
+P 4850 1800
+F 0 "R?" H 4650 1800 50  0000 L CNN
+F 1 "4m" H 4625 1725 50  0000 L CNN
+F 2 "" H 4850 1800 50  0001 C CNN
+F 3 "~" H 4850 1800 50  0001 C CNN
+	1    4850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1350 6450 1350
+Wire Wire Line
+	6450 1350 6450 1250
+Connection ~ 6450 1250
+Wire Wire Line
+	6450 1250 6600 1250
+$Comp
+L power:GND #PWR?
+U 1 1 6010FB9B
+P 6600 1250
+AR Path="/6016029C/6010FB9B" Ref="#PWR?"  Part="1" 
+AR Path="/6010FB9B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6600 1000 50  0001 C CNN
+F 1 "GND" H 6605 1077 50  0000 C CNN
+F 2 "" H 6600 1250 50  0001 C CNN
+F 3 "" H 6600 1250 50  0001 C CNN
+	1    6600 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1700 5550 1650
+Wire Wire Line
+	6800 1050 7150 1050
+Wire Wire Line
+	7150 1200 7150 1050
+Connection ~ 7150 1050
+Wire Wire Line
+	7150 1050 7500 1050
+Wire Wire Line
+	7150 1650 7150 1400
+Wire Wire Line
+	6350 1650 7150 1650
+Wire Wire Line
+	7500 1400 7500 1850
+Wire Wire Line
+	6350 1850 7500 1850
+Text Label 3750 4050 0    50   ~ 0
+DISABLE
+Text Label 4050 4300 2    50   ~ 0
+SYS_LOAD
+$Comp
+L power:+3V3 #PWR?
+U 1 1 601DB4C4
+P 5950 1050
+F 0 "#PWR?" H 5950 900 50  0001 C CNN
+F 1 "+3V3" H 5965 1223 50  0000 C CNN
+F 2 "" H 5950 1050 50  0001 C CNN
+F 3 "" H 5950 1050 50  0001 C CNN
+	1    5950 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1900 4850 2125
+Wire Wire Line
+	5550 1900 5550 1750
+Connection ~ 4850 1900
+Text Label 6650 1850 2    50   ~ 0
+ALERT
+Text Label 4000 4550 2    50   ~ 0
+ALERT
+Text Label 6550 1550 2    50   ~ 0
+SDA
+Text Label 6550 1650 2    50   ~ 0
+SCL
+Text Label 950  5100 0    50   ~ 0
+SDA
+Wire Wire Line
+	1600 5100 950  5100
+Text Label 950  5000 0    50   ~ 0
+SCL
+Wire Wire Line
+	950  5000 1600 5000
+Text Notes 6300 1150 0    50   ~ 0
+Adress: 0x40\n
+Wire Wire Line
+	4850 1700 5250 1700
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 6030AF86
+P 3700 1850
+F 0 "J?" H 3780 1842 50  0000 L CNN
+F 1 "Conn_01x04" H 3780 1751 50  0000 L CNN
+F 2 "" H 3700 1850 50  0001 C CNN
+F 3 "~" H 3700 1850 50  0001 C CNN
+	1    3700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 60314271
+P 3500 1750
+F 0 "#PWR?" H 3500 1600 50  0001 C CNN
+F 1 "+BATT" H 3515 1923 50  0000 C CNN
+F 2 "" H 3500 1750 50  0001 C CNN
+F 3 "" H 3500 1750 50  0001 C CNN
+	1    3500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 60315C09
+P 4850 2125
+F 0 "#PWR?" H 4850 1975 50  0001 C CNN
+F 1 "+BATT" V 4865 2252 50  0000 L CNN
+F 2 "" H 4850 2125 50  0001 C CNN
+F 3 "" H 4850 2125 50  0001 C CNN
+	1    4850 2125
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 1900 5550 1900
+Wire Wire Line
+	5550 1250 5250 1250
+Wire Wire Line
+	5250 1250 5250 1700
+Connection ~ 5250 1700
+Wire Wire Line
+	5250 1700 5550 1700
+$Comp
+L power:GND #PWR?
+U 1 1 603358A7
+P 3500 2050
+AR Path="/6016029C/603358A7" Ref="#PWR?"  Part="1" 
+AR Path="/603358A7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3500 1800 50  0001 C CNN
+F 1 "GND" H 3505 1877 50  0000 C CNN
+F 2 "" H 3500 2050 50  0001 C CNN
+F 3 "" H 3500 2050 50  0001 C CNN
+	1    3500 2050
+	1    0    0    -1  
+$EndComp
+Text Label 3150 1850 0    50   ~ 0
+CAN_H
+Text Label 3150 1950 0    50   ~ 0
+CAN_L
+Wire Wire Line
+	3150 1850 3500 1850
+Wire Wire Line
+	3150 1950 3500 1950
+Text Label 925  4075 0    50   ~ 0
+CAN_H
+Text Label 925  4175 0    50   ~ 0
+CAN_L
+Wire Wire Line
+	925  4075 1600 4075
+Wire Wire Line
+	925  4175 1600 4175
+Text Label 4875 1700 0    50   ~ 0
+BATT_VCC
 $EndSCHEMATC
