@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "PMU"
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Date "2021"
+Rev "v1.0"
+Comp "TU Wien Space Team"
+Comment1 "Ines Burgstaller"
 Comment2 ""
 Comment3 ""
 Comment4 ""
