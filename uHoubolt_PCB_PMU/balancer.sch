@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Transistor_FET:BUK7M27-80EX Q?
-U 1 1 601B6EBB
-P 6150 4400
-AR Path="/601B6EBB" Ref="Q?"  Part="1" 
-AR Path="/6017800E/601B6EBB" Ref="Q4"  Part="1" 
-F 0 "Q4" V 6350 4250 50  0000 L CNN
-F 1 "BUK7M27-80EX" V 6450 4000 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:LFPAK33" H 6350 4325 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7M27-80E.pdf" V 6150 4400 50  0001 L CNN
-	1    6150 4400
-	0    -1   1    0   
-$EndComp
 Connection ~ 4200 2500
 Wire Wire Line
 	4300 2500 4200 2500
@@ -73,19 +60,6 @@ Wire Wire Line
 	5750 3900 5750 4200
 Wire Wire Line
 	5500 3900 5750 3900
-$Comp
-L Transistor_FET:BUK7M27-80EX Q?
-U 1 1 601B6EDA
-P 5550 4400
-AR Path="/601B6EDA" Ref="Q?"  Part="1" 
-AR Path="/6017800E/601B6EDA" Ref="Q3"  Part="1" 
-F 0 "Q3" V 5750 4250 50  0000 L CNN
-F 1 "BUK7M27-80EX" V 5850 4050 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:LFPAK33" H 5750 4325 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7M27-80E.pdf" V 5550 4400 50  0001 L CNN
-	1    5550 4400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6850 3600 6850 4350
 Wire Wire Line
@@ -761,5 +735,27 @@ F 2 "" H 4750 3400 50  0001 C CNN
 F 3 "" H 4750 3400 50  0001 C CNN
 	1    4750 3400
 	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:CSD17303Q5 Q?
+U 1 1 5FFDCFF3
+P 5550 4400
+F 0 "Q?" V 5799 4400 50  0000 C CNN
+F 1 "CSD17303Q5" V 5890 4400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 5750 4325 50  0001 L CIN
+F 3 "http://www.ti.com/lit/gpn/csd17303q5" V 5550 4400 50  0001 L CNN
+	1    5550 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:CSD17303Q5 Q?
+U 1 1 5FFE07CF
+P 6150 4400
+F 0 "Q?" V 6399 4400 50  0000 C CNN
+F 1 "CSD17303Q5" V 6490 4400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 6350 4325 50  0001 L CIN
+F 3 "http://www.ti.com/lit/gpn/csd17303q5" V 6150 4400 50  0001 L CNN
+	1    6150 4400
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
