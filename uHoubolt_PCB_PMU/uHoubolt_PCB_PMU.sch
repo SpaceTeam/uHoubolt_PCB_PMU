@@ -440,17 +440,6 @@ Wire Wire Line
 Connection ~ 6700 4350
 Wire Wire Line
 	6700 4350 6700 4500
-$Comp
-L power:GND #PWR016
-U 1 1 5FE435F1
-P 6700 4700
-F 0 "#PWR016" H 6700 4450 50  0001 C CNN
-F 1 "GND" H 6705 4527 50  0000 C CNN
-F 2 "" H 6700 4700 50  0001 C CNN
-F 3 "" H 6700 4700 50  0001 C CNN
-	1    6700 4700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6550 4000 6550 3800
 Wire Wire Line
@@ -629,37 +618,13 @@ F 3 "https://www.vishay.com/docs/65596/si7141dp.pdf" H 9100 3850 50  0001 L CNN
 	1    9100 3850
 	1    0    0    1   
 $EndComp
-$Comp
-L Transistor_FET:BUK7M27-80EX Q1
-U 1 1 600D7062
-P 5950 3850
-F 0 "Q1" H 5650 3750 50  0000 L CNN
-F 1 "BUK7M27-80EX" H 5400 3650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:LFPAK33" H 6150 3775 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7M27-80E.pdf" V 5950 3850 50  0001 L CNN
-	1    5950 3850
-	1    0    0    -1  
-$EndComp
-Text Label 5400 3850 0    50   ~ 0
+Text Label 5175 3850 0    50   ~ 0
 DISABLE
-Wire Wire Line
-	5400 3850 5750 3850
 Wire Wire Line
 	6050 3650 6700 3650
 Wire Wire Line
 	6700 3650 6700 3700
 Connection ~ 6700 3700
-$Comp
-L power:GND #PWR013
-U 1 1 600E6257
-P 6050 4050
-F 0 "#PWR013" H 6050 3800 50  0001 C CNN
-F 1 "GND" H 6125 3875 50  0000 R CNN
-F 2 "" H 6050 4050 50  0001 C CNN
-F 3 "" H 6050 4050 50  0001 C CNN
-	1    6050 4050
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R14
 U 1 1 5FE16F9A
@@ -1271,4 +1236,54 @@ Wire Wire Line
 	3000 5350 3400 5350
 Wire Wire Line
 	3400 5450 3000 5450
+$Comp
+L Transistor_FET:ZXMN3F30FH Q?
+U 1 1 5FF6F840
+P 5950 3850
+F 0 "Q?" H 6154 3896 50  0000 L CNN
+F 1 "ZXMN3F30FH" H 6154 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 3775 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN3F30FH.pdf" H 5950 3850 50  0001 L CNN
+	1    5950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5FE435F1
+P 6700 4700
+F 0 "#PWR016" H 6700 4450 50  0001 C CNN
+F 1 "GND" H 6705 4527 50  0000 C CNN
+F 2 "" H 6700 4700 50  0001 C CNN
+F 3 "" H 6700 4700 50  0001 C CNN
+	1    6700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF780F7
+P 6050 4100
+F 0 "#PWR?" H 6050 3850 50  0001 C CNN
+F 1 "GND" H 6055 3927 50  0000 C CNN
+F 2 "" H 6050 4100 50  0001 C CNN
+F 3 "" H 6050 4100 50  0001 C CNN
+	1    6050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4050 6050 4100
+$Comp
+L Device:R_Small R?
+U 1 1 5FF7FCD0
+P 5550 3850
+F 0 "R?" V 5625 3800 50  0000 L CNN
+F 1 "200" V 5675 3775 50  0000 L CNN
+F 2 "" H 5550 3850 50  0001 C CNN
+F 3 "~" H 5550 3850 50  0001 C CNN
+	1    5550 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3850 5750 3850
+Wire Wire Line
+	5450 3850 5175 3850
 $EndSCHEMATC

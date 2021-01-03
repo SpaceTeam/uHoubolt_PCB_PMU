@@ -1,5 +1,5 @@
 (sym_lib_table
   (lib (name TXV_LIB)(type Legacy)(uri ${KIPRJMOD}/../TXV_Library_PCB/TXV_Library_Symbols.lib)(options "")(descr ""))
-  (lib (name flightcontroller-rescue)(type Legacy)(uri /home/ines/SG_PCB/flightcontroller-rescue.lib)(options "")(descr ""))
-  (lib (name STM32G4)(type Legacy)(uri /home/ines/SG_PCB/STM32G4.lib)(options "")(descr ""))
+  (lib (name flightcontroller-rescue)(type Legacy)(uri /home/ines/SG_PCB/flightcontroller-rescue.lib)(options "")(descr "")(disabled))
+  (lib (name STM32G4)(type Legacy)(uri /home/ines/SG_PCB/STM32G4.lib)(options "")(descr "")(disabled))
 )
