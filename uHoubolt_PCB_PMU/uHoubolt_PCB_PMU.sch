@@ -1141,9 +1141,9 @@ Wire Wire Line
 	7500 1400 7500 1850
 Wire Wire Line
 	6350 1850 7500 1850
-Text Label 3400 5550 2    50   ~ 0
-DISABLE
 Text Label 3400 5450 2    50   ~ 0
+DISABLE
+Text Label 3400 5350 2    50   ~ 0
 SYS_LOAD
 $Comp
 L power:+3V3 #PWR011
@@ -1243,8 +1243,6 @@ Wire Wire Line
 	925  4175 1600 4175
 Text Label 4875 1650 0    50   ~ 0
 BATT_VCC
-Text Label 3400 5250 2    50   ~ 0
-IOUT
 Wire Wire Line
 	8300 4200 8300 5575
 Wire Wire Line
@@ -1252,12 +1250,8 @@ Wire Wire Line
 Connection ~ 8300 5575
 Wire Wire Line
 	8300 5575 8300 5775
-Wire Wire Line
-	3000 5250 3400 5250
-Text Label 3400 5350 2    50   ~ 0
+Text Label 3400 5250 2    50   ~ 0
 ALERT
-Wire Wire Line
-	3000 5350 3400 5350
 Wire Wire Line
 	4850 1650 5250 1650
 Wire Wire Line
@@ -1267,8 +1261,14 @@ Wire Wire Line
 Connection ~ 5250 1650
 Wire Wire Line
 	5250 1650 5550 1650
+Text Label 950  5750 0    50   ~ 0
+IOUT
 Wire Wire Line
-	3000 5450 3400 5450
+	950  5750 1600 5750
 Wire Wire Line
-	3000 5550 3400 5550
+	3000 5250 3400 5250
+Wire Wire Line
+	3000 5350 3400 5350
+Wire Wire Line
+	3400 5450 3000 5450
 $EndSCHEMATC
