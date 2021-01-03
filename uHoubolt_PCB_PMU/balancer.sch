@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -526,9 +526,9 @@ Text HLabel 3700 2900 0    50   Input ~ 0
 BATT_VCC
 Wire Wire Line
 	4100 2900 3700 2900
-Text HLabel 3350 3100 0    50   Input ~ 0
-BATT3V6
 Text HLabel 3300 3300 0    50   Input ~ 0
+BATT3V6
+Text HLabel 3350 3100 0    50   Input ~ 0
 BATT7V2
 Wire Wire Line
 	3350 3100 3750 3100
@@ -724,12 +724,8 @@ Wire Wire Line
 	4900 3400 4750 3400
 Wire Wire Line
 	3100 4500 3100 4850
-Text Label 6500 3400 2    50   ~ 0
-CBI
-Text Label 4750 3400 0    50   ~ 0
-CBI
 Wire Wire Line
-	5850 3400 6500 3400
+	5850 3400 6000 3400
 Wire Wire Line
 	6200 4125 6250 4125
 Wire Wire Line
@@ -740,4 +736,30 @@ Wire Wire Line
 	5850 3700 5850 4125
 Wire Wire Line
 	6050 3300 6125 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5FF67558
+P 6000 3400
+AR Path="/5FF67558" Ref="#PWR?"  Part="1" 
+AR Path="/6017800E/5FF67558" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 3150 50  0001 C CNN
+F 1 "GND" H 6005 3227 50  0000 C CNN
+F 2 "" H 6000 3400 50  0001 C CNN
+F 3 "" H 6000 3400 50  0001 C CNN
+	1    6000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF67769
+P 4750 3400
+AR Path="/5FF67769" Ref="#PWR?"  Part="1" 
+AR Path="/6017800E/5FF67769" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4750 3150 50  0001 C CNN
+F 1 "GND" H 4755 3227 50  0000 C CNN
+F 2 "" H 4750 3400 50  0001 C CNN
+F 3 "" H 4750 3400 50  0001 C CNN
+	1    4750 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
