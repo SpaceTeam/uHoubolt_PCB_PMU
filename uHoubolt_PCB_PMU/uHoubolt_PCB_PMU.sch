@@ -496,7 +496,7 @@ $EndComp
 Wire Wire Line
 	9400 3650 9650 3650
 Connection ~ 9400 3650
-Text Label 10050 3650 2    50   ~ 0
+Text Label 10700 3300 2    50   ~ 0
 SYS_LOAD
 Wire Wire Line
 	9650 3650 10050 3650
@@ -1286,4 +1286,54 @@ Wire Wire Line
 	5650 3850 5750 3850
 Wire Wire Line
 	5450 3850 5175 3850
+$Comp
+L Device:R_Small R?
+U 1 1 5FF91AB4
+P 10050 3450
+AR Path="/6016029C/5FF91AB4" Ref="R?"  Part="1" 
+AR Path="/5FF91AB4" Ref="R?"  Part="1" 
+F 0 "R?" H 10109 3496 50  0000 L CNN
+F 1 "10k" H 10109 3405 50  0000 L CNN
+F 2 "" H 10050 3450 50  0001 C CNN
+F 3 "~" H 10050 3450 50  0001 C CNN
+	1    10050 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF91ABA
+P 10050 3150
+AR Path="/6016029C/5FF91ABA" Ref="R?"  Part="1" 
+AR Path="/5FF91ABA" Ref="R?"  Part="1" 
+F 0 "R?" H 10109 3196 50  0000 L CNN
+F 1 "1k" H 10109 3105 50  0000 L CNN
+F 2 "" H 10050 3150 50  0001 C CNN
+F 3 "~" H 10050 3150 50  0001 C CNN
+	1    10050 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF91AC0
+P 10050 3000
+AR Path="/6016029C/5FF91AC0" Ref="#PWR?"  Part="1" 
+AR Path="/5FF91AC0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10050 2750 50  0001 C CNN
+F 1 "GND" H 10055 2827 50  0000 C CNN
+F 2 "" H 10050 3000 50  0001 C CNN
+F 3 "" H 10050 3000 50  0001 C CNN
+	1    10050 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10050 3300 10050 3250
+Wire Wire Line
+	10050 3350 10050 3300
+Connection ~ 10050 3300
+Wire Wire Line
+	10050 3650 10050 3550
+Wire Wire Line
+	10050 3000 10050 3050
+Wire Wire Line
+	10700 3300 10050 3300
 $EndSCHEMATC
