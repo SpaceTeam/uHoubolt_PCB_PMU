@@ -1293,8 +1293,8 @@ Wire Notes Line
 	7950 550  4100 550 
 Wire Notes Line
 	4100 550  4100 2325
-Text Notes 6600 725  0    79   ~ 0
-Current Measurement
+Text Notes 6075 675  0    79   ~ 0
+Current/Voltage Measurement
 Wire Notes Line
 	650  2375 3800 2375
 Wire Notes Line
