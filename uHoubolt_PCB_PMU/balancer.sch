@@ -416,22 +416,7 @@ Wire Wire Line
 	3300 3300 3950 3300
 Connection ~ 6850 3600
 NoConn ~ 5850 2900
-$Comp
-L Device:Thermistor_NTC TH1
-U 1 1 5FF5E99E
-P 6500 3200
-F 0 "TH1" V 6210 3200 50  0000 C CNN
-F 1 "Thermistor_NTC" V 6301 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6500 3250 50  0001 C CNN
-F 3 "~" H 6500 3250 50  0001 C CNN
-	1    6500 3200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6150 3200 6350 3200
 Connection ~ 6150 3200
-Wire Wire Line
-	6650 3200 7050 3200
 $Comp
 L Device:D_Zener D3
 U 1 1 5FF7203B
@@ -454,7 +439,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 2850 7050 2850
 Wire Wire Line
-	7050 2850 7050 3200
+	7050 2850 7050 3000
 Connection ~ 7050 3200
 Wire Wire Line
 	3950 3750 3100 3750
@@ -644,8 +629,6 @@ Wire Wire Line
 	6000 2700 6375 2700
 Text Label 7450 3200 2    50   ~ 0
 B_GND
-Wire Wire Line
-	7050 3200 7450 3200
 Text Label 6875 3300 2    50   ~ 0
 B_GND
 Wire Wire Line
@@ -675,4 +658,26 @@ Wire Wire Line
 	3550 2300 3850 2300
 Wire Wire Line
 	4050 2300 4200 2300
+Wire Wire Line
+	6150 3200 6450 3200
+Wire Wire Line
+	6550 3200 7050 3200
+$Comp
+L Connector_Generic_MountingPin:Conn_01x02_MountingPin J_TH1
+U 1 1 607BBD1D
+P 6450 3000
+F 0 "J_TH1" V 6550 2925 50  0000 C CNN
+F 1 "Conn_01x02_MP" V 6550 2800 50  0001 C CNN
+F 2 "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical" H 6450 3000 50  0001 C CNN
+F 3 "~" H 6450 3000 50  0001 C CNN
+	1    6450 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 3200 7450 3200
+Wire Wire Line
+	6750 3000 7050 3000
+Connection ~ 7050 3000
+Wire Wire Line
+	7050 3000 7050 3200
 $EndSCHEMATC
