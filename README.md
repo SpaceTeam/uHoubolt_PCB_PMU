@@ -1,1 +1,1 @@
-# uHoubolt_PCB_PMU
+# µHoubolt Power Management Unit PCB
