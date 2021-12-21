@@ -1056,12 +1056,12 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR0104
 U 1 1 61D46601
-P 9125 7975
-F 0 "#PWR0104" H 9125 7825 50  0001 C CNN
-F 1 "+12V" H 9025 8125 50  0000 L CNN
-F 2 "" H 9125 7975 50  0001 C CNN
-F 3 "" H 9125 7975 50  0001 C CNN
-	1    9125 7975
+P 9500 7450
+F 0 "#PWR0104" H 9500 7300 50  0001 C CNN
+F 1 "+12V" H 9400 7600 50  0000 L CNN
+F 2 "" H 9500 7450 50  0001 C CNN
+F 3 "" H 9500 7450 50  0001 C CNN
+	1    9500 7450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1638,13 +1638,13 @@ Wire Wire Line
 Wire Wire Line
 	2925 2575 3325 2575
 Connection ~ 3325 2575
-Text Label 3725 6700 0    50   ~ 0
+Text Label 3725 7700 0    50   ~ 0
 ~CHGOK
 Text Label 3725 6250 0    50   ~ 0
 ~ACOK
 Text Label 3800 3525 0    50   ~ 0
 NTC
-Text Label 3200 7700 0    50   ~ 0
+Text Label 3200 6700 0    50   ~ 0
 NTC
 Wire Wire Line
 	4975 2450 4975 2425
@@ -1838,7 +1838,7 @@ Wire Wire Line
 Wire Wire Line
 	2975 6375 2975 6800
 Wire Wire Line
-	3200 7700 4075 7700
+	3200 6700 4075 6700
 Connection ~ 3550 6350
 Wire Wire Line
 	3550 6350 2450 6350
@@ -1849,7 +1849,7 @@ Wire Wire Line
 Wire Wire Line
 	4075 6250 3725 6250
 Wire Wire Line
-	4075 6700 3725 6700
+	4075 7700 3725 7700
 NoConn ~ 10425 8925
 Wire Wire Line
 	4075 8900 4000 8900
@@ -1973,4 +1973,38 @@ $EndComp
 Wire Wire Line
 	11725 5500 11725 5625
 NoConn ~ 9225 8475
+$Comp
+L Jumper:Jumper_3_Open JP?
+U 1 1 61C433FF
+P 9125 7575
+F 0 "JP?" H 9125 7799 50  0000 C CNN
+F 1 "Jumper_3_Open" H 9125 7708 50  0000 C CNN
+F 2 "" H 9125 7575 50  0001 C CNN
+F 3 "~" H 9125 7575 50  0001 C CNN
+	1    9125 7575
+	1    0    0    -1  
+$EndComp
+$Comp
+L TXV_Library_Symbols:Pyro #PWR?
+U 1 1 61C662AA
+P 8750 7450
+F 0 "#PWR?" H 8750 7300 50  0001 C CNN
+F 1 "Pyro" H 8750 7600 50  0000 C CNN
+F 2 "" H 8750 7450 50  0001 C CNN
+F 3 "" H 8750 7450 50  0001 C CNN
+	1    8750 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 7575 9375 7575
+Wire Wire Line
+	8875 7575 8750 7575
+Wire Wire Line
+	8750 7575 8750 7450
+Wire Wire Line
+	9500 7450 9500 7575
+Wire Wire Line
+	9125 7950 9125 7725
+Text Notes 8025 5450 0    50   ~ 0
+TODO:\nAdd 5V Pad to connect ServoVoltage to 5V \n
 $EndSCHEMATC
