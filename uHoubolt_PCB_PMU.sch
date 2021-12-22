@@ -2238,12 +2238,12 @@ Wire Wire Line
 	11500 1475 11500 1875
 Connection ~ 11500 1475
 $Comp
-L TXV_Library_Symbols:SpaceTeam_LOGO G?
+L TXV_Library_Symbols:SpaceTeam_LOGO G1
 U 1 1 6259FDE3
 P 8900 1775
-F 0 "G?" H 8900 1569 60  0001 C CNN
+F 0 "G1" H 8900 1569 60  0001 C CNN
 F 1 "SpaceTeam_LOGO" H 8900 1981 60  0001 C CNN
-F 2 "" H 8900 1775 50  0001 C CNN
+F 2 "TXV_Library_Footprints:ST_Logo_new" H 8900 1775 50  0001 C CNN
 F 3 "" H 8900 1775 50  0001 C CNN
 	1    8900 1775
 	1    0    0    -1  
