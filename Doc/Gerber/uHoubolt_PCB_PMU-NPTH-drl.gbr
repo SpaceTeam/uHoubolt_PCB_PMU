@@ -1,0 +1,29 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,5.1.5+dfsg1-2build2*%
+%TF.CreationDate,2021-12-22T23:08:51+01:00*%
+%TF.ProjectId,uHoubolt_PCB_PMU,75486f75-626f-46c7-945f-5043425f504d,rev?*%
+%TF.SameCoordinates,PX8583b00PY5f5e100*%
+%TF.FileFunction,NonPlated,1,2,NPTH,Drill*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 5.1.5+dfsg1-2build2) date 2021-12-22 23:08:51*
+%MOMM*%
+%LPD*%
+G04 APERTURE LIST*
+%TA.AperFunction,ComponentDrill*%
+%ADD10C,1.300000*%
+%TD*%
+%TA.AperFunction,ComponentDrill*%
+%ADD11C,3.000000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,J1*%
+X-21490000Y50900000D03*
+%TO.C,J2*%
+X28140000Y28950000D03*
+D11*
+%TO.C,J3*%
+X16650000Y45660000D03*
+X22350000Y45660000D03*
+M02*
