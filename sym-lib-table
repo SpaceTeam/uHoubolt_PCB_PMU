@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name "TXV_Library_Symbols")(type "Legacy")(uri "${KIPRJMOD}/TXV_Library_PCB/TXV_Library_Symbols.lib")(options "")(descr ""))
-  (lib (name "uHoubolt_PCB_PMU-rescue")(type "Legacy")(uri "${KIPRJMOD}/uHoubolt_PCB_PMU-rescue.lib")(options "")(descr ""))
+  (lib (name "TXV_Library_Symbols")(type "KiCad")(uri "${KIPRJMOD}/TXV_Library_PCB/TXV_Library_Symbols.kicad_sym")(options "")(descr ""))
 )

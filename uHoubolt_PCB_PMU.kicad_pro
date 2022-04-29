@@ -435,6 +435,26 @@
     [
       "4632212f-13ce-4392-bc68-ccb9ba333770",
       ""
+    ],
+    [
+      "ff3c65f5-bad8-4042-af98-92c3e77ddd2a",
+      "BatteryCharger"
+    ],
+    [
+      "b6f90244-9b34-437c-b046-7a58e4428275",
+      "Output0"
+    ],
+    [
+      "da42c7ef-e7d5-4eb7-999f-23bca31fd96e",
+      "Output1"
+    ],
+    [
+      "859f5343-916f-4570-81cc-b0427e3d8b63",
+      "Output2"
+    ],
+    [
+      "f9ad6967-082a-41a0-8b97-2c2be4f74f75",
+      "Output3"
     ]
   ],
   "text_variables": {}
