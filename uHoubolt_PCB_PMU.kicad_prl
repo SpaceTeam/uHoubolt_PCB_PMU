@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 43,
+    "active_layer": 0,
     "active_layer_preset": "Wichtige Layer",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -62,8 +62,8 @@
       35,
       36
     ],
-    "visible_layers": "ffcdc0f_ffffffff",
-    "zone_display_mode": 0
+    "visible_layers": "ffcdc3f_ffffffff",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "uHoubolt_PCB_PMU.kicad_prl",
