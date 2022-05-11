@@ -55,26 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "silk_over_copper|168800000|94999999|00000000-0000-0000-0000-000061b24beb|3f094f8c-6885-4b63-be9d-bee213734e11",
-        "silk_over_copper|173073499|108497222|4716cb43-bdcc-4d84-a629-d7d3e029184d|a7adb3b4-188f-4157-8c5c-1bbe73d3e64c",
-        "silk_over_copper|173247485|92000000|ca8f23f9-62d9-4e24-9815-123da7c6a7a0|c2c094c8-28b9-41f6-bef4-535b08a356f7",
-        "silk_over_copper|178150626|91977626|683bb8b2-690d-4461-a39d-eb3e5f6fd75f|169c2e1d-d537-47c7-80c7-3b3605add8ca",
-        "silk_over_copper|178172509|91822544|683bb8b2-690d-4461-a39d-eb3e5f6fd75f|169c2e1d-d537-47c7-80c7-3b3605add8ca",
-        "silk_over_copper|179668508|107653981|8bef38c7-7569-434d-ba1d-46baeb304ba2|17736afd-e874-418c-a66b-5ab81458fc17",
-        "silk_over_copper|182100000|97000000|83c3260a-1aab-47ed-a74f-7f0f249d32c3|2240b3ec-dd77-4aae-97d2-e2ee7dbdc493",
-        "silk_over_copper|182599999|94999999|00000000-0000-0000-0000-000061a3a516|e08539a3-864c-432d-943a-06bedf3ef828",
-        "silk_over_copper|183800000|94999999|00000000-0000-0000-0000-000061a3a513|6984dc9c-861e-4136-aa70-0c02ff89c2c2",
-        "silk_over_copper|184300000|97000000|0df1afc4-45b0-47a3-af0b-c0830e45bc94|d7161b13-9dfb-4911-860b-6d4cf7c36124",
-        "silk_over_copper|186826501|108497222|4f8d5c76-5b83-47a7-b2d4-340bb26d5916|8f84e6d3-48fe-4eae-96c7-940f1c338ac4",
-        "silk_over_copper|187627456|108777491|4f8d5c76-5b83-47a7-b2d4-340bb26d5916|8f84e6d3-48fe-4eae-96c7-940f1c338ac4",
-        "silk_over_copper|187627456|92777491|bc6ea417-28ff-48a5-ba09-4fe354b7ffbe|19629449-fdaa-4d9b-8a67-9ead0ae69783",
-        "silk_over_copper|188247485|92000000|bc6ea417-28ff-48a5-ba09-4fe354b7ffbe|19629449-fdaa-4d9b-8a67-9ead0ae69783",
-        "silk_over_copper|194127456|92777491|ba7e3389-075e-487e-9da2-8587b8929239|ad0326f9-e42a-4824-bc65-80bcad81b53d",
-        "silk_over_copper|194296019|108718508|df5d4dff-c534-4511-9e4b-37a1aaa6ce4c|c9e13c8c-2e9a-492a-88d1-0c8977f2a1b7",
-        "silk_over_copper|194296019|92718508|ba7e3389-075e-487e-9da2-8587b8929239|ad0326f9-e42a-4824-bc65-80bcad81b53d",
-        "silk_over_copper|194447222|107376501|df5d4dff-c534-4511-9e4b-37a1aaa6ce4c|c9e13c8c-2e9a-492a-88d1-0c8977f2a1b7"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
